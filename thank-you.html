@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You - Hyperborea Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #0a0a0a;
+      }
+      .font-orbitron {
+        font-family: 'Orbitron', sans-serif;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+      @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-100%); }
+      }
+      @keyframes marquee2 {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0); }
+      }
+      .animate-marquee {
+        animation: marquee 80s linear infinite;
+      }
+      .animate-marquee2 {
+        animation: marquee2 80s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-gray-300">
+    <div class="min-h-screen bg-black bg-grid-gray-700/[0.2] relative">
+      <!-- Scrolling Background Text -->
+      <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="absolute top-1/2 left-0 -translate-y-1/2 w-full">
+            <div class="relative flex overflow-x-hidden -rotate-3">
+                <div class="py-2 animate-marquee whitespace-nowrap flex">
+                    <span class="text-[18vh] font-orbitron font-black uppercase text-white/5 mx-4">Hyperborea</span><span class="text-[18vh] font-orbitron font-black uppercase text-white/5 mx-4">Hyperborea</span><span class="text-[18vh] font-orbitron font-black uppercase text-white/5 mx-4">Hyperborea</span><span class="text-[18vh] font-orbitron font-black uppercase text-white/5 mx-4">Hyperborea</span>
+                </div>
+                <div class="absolute top-0 py-2 animate-marquee2 whitespace-nowrap flex">
+                    <span class="text-[18vh] font-orbitron font-black uppercase text-white/5 mx-4">Hyperborea</span><span class="text-[18vh] font-orbitron font-black uppercase text-white/5 mx-4">Hyperborea</span><span class="text-[18vh] font-orbitron font-black uppercase text-white/5 mx-4">Hyperborea</span><span class="text-[18vh] font-orbitron font-black uppercase text-white/5 mx-4">Hyperborea</span>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div class="relative z-10 flex flex-col min-h-screen">
+
+        <!-- Navigation Bar -->
+        <nav class="sticky top-0 z-50 bg-black/70 backdrop-blur-md border-b border-gray-800">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+              <div class="flex-shrink-0">
+                <a href="index.html" class="flex items-center space-x-3 text-white transition-opacity duration-300 hover:opacity-80">
+                  <svg class="h-10 w-10" viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="currentColor">
+                      <path d="M50 20 L55 25 L60 20 L60 15 C60 10 55 5 50 5 C45 5 40 10 40 15 L40 20 L45 25 L50 20Z"></path>
+                      <path d="M35 30 Q50 25 65 30 L60 40 L40 40 Z"></path>
+                      <path d="M30 25 C20 35 20 50 30 60"></path>
+                      <path d="M70 25 C80 35 80 50 70 60"></path>
+                      <path d="M40 45 L45 50 L40 55 Z"></path>
+                      <path d="M60 45 L55 50 L60 55 Z"></path>
+                      <path d="M45 60 L55 60 L50 65 Z"></path>
+                      <path d="M35 65 Q50 75 65 65 L60 80 L40 80 Z"></path>
+                      <path d="M40 80 L45 90 L55 90 L60 80 Z"></path>
+                      <path d="M25 60 A 30 30 0 0 0 75 60 L 70 60 A 25 25 0 0 1 30 60 Z"></path>
+                      <path d="M45 85 L50 95 L55 85 Z"></path>
+                    </g>
+                  </svg>
+                  <span class="font-orbitron font-bold text-xl hidden sm:block">HYPERBOREA GAMES</span>
+                </a>
+              </div>
+              <div class="flex items-center">
+                <div class="flex items-baseline space-x-2 md:space-x-4">
+                  <a href="index.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium tracking-wider transition-colors duration-300 text-gray-400 hover:text-white hover:bg-gray-800/30">MY GAMES</a>
+                  <a href="social.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium tracking-wider transition-colors duration-300 text-gray-400 hover:text-white hover:bg-gray-800/30">SOCIAL MEDIA</a>
+                  <a href="contact.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium tracking-wider transition-colors duration-300 text-gray-400 hover:text-white hover:bg-gray-800/30">CONTACT US</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12 flex items-center justify-center">
+          
+          <!-- Thank You Section -->
+          <section id="thank-you" class="animate-fade-in py-12 text-center">
+            <div class="max-w-2xl mx-auto">
+              <h2 class="font-orbitron text-4xl font-bold text-white mb-4">Message Received</h2>
+              <div id="confirmation-message-container" class="mt-6 text-center">
+                <!-- Message will be injected here -->
+              </div>
+              <a href="index.html" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-md transition-colors duration-300 hover:bg-blue-500">
+                Return to Base
+              </a>
+            </div>
+          </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-6 text-gray-500 text-sm">
+          <p>&copy; 2025 Hyperborea Games. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Active nav link highlighter
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.nav-link').forEach(link => {
+          const linkPage = link.getAttribute('href').split('/').pop();
+          if (linkPage === 'contact.html') { // Highlight contact link as we came from there
+            link.classList.remove('text-gray-400', 'hover:bg-gray-800/30');
+            link.classList.add('text-white', 'bg-gray-800/50');
+          }
+        });
+
+        // Display confirmation message
+        const messageContainer = document.getElementById('confirmation-message-container');
+        const params = new URLSearchParams(window.location.search);
+        const msg = params.get('msg');
+        
+        const defaultMessage = `Thank you for your message. We have received it and will get back to you shortly if a reply is needed.`;
+
+        const messageText = msg ? decodeURIComponent(msg) : defaultMessage;
+
+        messageContainer.innerHTML = `
+          <div class="flex items-start space-x-3 text-left bg-green-900/30 border border-green-500/30 text-green-300 text-lg rounded-md p-4" role="alert">
+            <svg class="h-6 w-6 flex-shrink-0 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <p>${messageText}</p>
+          </div>`;
+      });
+    </script>
+  </body>
+</html>
